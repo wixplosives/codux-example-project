@@ -1,0 +1,55 @@
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.positioned {
+    position: relative;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+
+.hitArea
+{
+    position: relative;
+}
+
+.hitArea::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.noUserSelect
+{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.button
+{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.button:not([disabled]):not([aria-disabled])
+{
+    cursor: pointer;
+}
+
+:global(a).resetDefaultStyle {
+    text-decoration: none;
+    color: inherit;
+}

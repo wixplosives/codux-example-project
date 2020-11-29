@@ -1,0 +1,57 @@
+:import {
+    -st-from: "../menu/menu.st.css";
+    -st-default: AppMenu;
+}
+
+:import {
+    -st-from: "../user-status/user-status.st.css";
+    -st-default: UserStatus;
+}
+
+
+.root
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    font-family: 'Prompt', sans-serif;
+}
+
+.closeButton
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.separator
+{
+    width: 160px;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 25px 0;
+}
+
+.userStatus
+{
+    -st-extends: UserStatus;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+}
+
+.appMenu
+{
+    -st-extends: AppMenu;
+}
+
+.appMenu::menuItem {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Prompt, sans-serif;
+    color: #000000;
+}

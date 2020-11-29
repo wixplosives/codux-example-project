@@ -1,0 +1,99 @@
+:import {
+    -st-from: "../mobile-app-menu/mobile-app-menu.st.css";
+    -st-default: MobileAppMenu;
+}
+
+.logoText
+{
+    font-family: Caudex, serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.menuButtonBar {
+    width: 27px;
+    height: 2px;
+    background: #000;
+}
+
+.menuButtonBar:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.menu
+{
+    position: absolute;
+    left: 100px;
+    right: 100px;
+}
+
+.mobileAppMenu
+{
+    -st-extends: MobileAppMenu;
+    z-index: 2;
+}
+
+/** Mobile */
+@media only screen and (max-width: 750px)
+{
+    .root
+    {
+        padding: 20px 25px;
+    }
+
+    .logoText
+    {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+
+    .appLogo
+    {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .userStatus, .menu
+    {
+        display: none !important;
+    }
+}
+
+/** Desktop */
+@media only screen and (min-width: 750px)
+{
+    .root
+    {
+        padding: 25px 45px;
+    }
+
+    .appLogo
+    {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .logoText
+    {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .menuButton
+    {
+        display: none !important;
+    }
+
+    .shoppingCart
+    {
+        margin-right: 30px;
+    }
+}

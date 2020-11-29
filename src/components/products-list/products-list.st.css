@@ -1,0 +1,22 @@
+/** Mobile */
+@media only screen and (max-width: 750px) {
+  .root {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .root > :not(:last-child)
+  {
+    margin-bottom: 35px;
+  }
+}
+
+/** Desktop */
+@media only screen and (min-width: 750px) {
+  .root {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+  }
+}

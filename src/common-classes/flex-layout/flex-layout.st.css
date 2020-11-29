@@ -1,0 +1,80 @@
+.flexColumnAlignToStart, .flexColumnAlignToEnd, .flexColumnAlignToCenter, .flexColumnStretch, .flexColumnDefault
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.flexRowAlignToStart, .flexRowAlignToEnd, .flexRowAlignToCenter, .flexRowStretch
+{
+    display: flex;
+    flex-flow: row;
+}
+
+
+.flexColumnAlignToStart, .flexRowAlignToStart
+{
+    align-items: flex-start;
+}
+
+.flexColumnAlignToCenter, .flexRowAlignToCenter
+{
+    align-items: center;
+}
+
+.flexColumnAlignToEnd, .flexRowAlignToEnd
+{
+    align-items: flex-end;
+}
+
+.flexColumnStretch, .flexRowStretch
+{
+    align-items: stretch;
+}
+
+.flexCenterContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexFillRemainingVerticalSpace
+{
+    flex: 1;
+    min-height: 0;
+}
+
+.flexFillRemainingHorizontalSpace
+{
+    flex: 1;
+    min-height: 0;
+}
+
+.flexAlignSelfFlexStart
+{
+    align-self: flex-start;
+}
+
+.flexAlignSelfCenter
+{
+    align-self: center;
+}
+
+.flexAlignSelfFlexEnd
+{
+    align-self: flex-end;
+}
+
+.flexAlignSelfStretch
+{
+    align-self: stretch;
+}
+
+.noShrink
+{
+    flex-shrink: 0;
+}
+
+.flexHorizontallyJustifyToEnd {
+    margin-left: auto;
+}

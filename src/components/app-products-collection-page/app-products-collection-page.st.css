@@ -1,0 +1,50 @@
+:import {
+  -st-from: "../header/header.st.css";
+  -st-default: AppHeader;
+}
+
+:import {
+  -st-from: "../bread-crumbs/bread-crumbs.st.css";
+  -st-default: BreadCrumbs;
+}
+
+.root {
+}
+
+.appHeader {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+
+  -st-extends: AppHeader;
+}
+
+.breadCrumbs {
+  -st-extends: BreadCrumbs;
+}
+
+/** Mobile */
+@media only screen and (max-width: 750px) {
+  .pageBody {
+    padding: 30px 20px;
+  }
+
+  .breadCrumbs {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
+
+/** Desktop */
+@media only screen and (min-width: 750px) {
+  .pageBody {
+    padding: 60px 95px;
+  }
+
+  .breadCrumbs {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+}

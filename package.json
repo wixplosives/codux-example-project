@@ -1,0 +1,30 @@
+{
+  "name": "wcs-example-project",
+  "version": "1.0.0",
+  "repository": "git@github.com:wixplosives/wcs-example-project.git",
+  "author": "Wix.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "yarn typecheck"
+  },
+  "dependencies": {
+    "@stylable/runtime": "^3.11.7",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@stylable/core": "^3.11.7",
+    "@stylable/webpack-plugin": "^3.11.7",
+    "@ts-tools/webpack-loader": "^2.1.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@wixc3/wcs-core": "^2.0.5",
+    "html-webpack-plugin": "^4.5.0",
+    "typescript": "~4.1.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

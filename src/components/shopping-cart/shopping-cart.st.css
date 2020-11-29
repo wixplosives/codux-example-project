@@ -1,0 +1,41 @@
+.root
+{
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.shape
+{
+    transition: all 0.2s;
+    fill: rgba(0,0,0,0)
+}
+
+.root:hover .shape {
+    fill: black;
+}
+
+.root
+{
+    color: #000;
+}
+
+.root:hover
+{
+    color: #fff;
+}
+
+.itemsCount
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -3px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+}

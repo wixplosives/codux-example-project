@@ -1,0 +1,35 @@
+.root {
+    -st-states: layout(enum(horizontal, vertical));
+}
+
+.root:layout(horizontal) > :not(:last-child)
+{
+    margin-right: 40px;
+}
+
+.root:layout(vertical) > :not(:last-child)
+{
+    margin-bottom: 20px;
+}
+
+.menuItem
+{
+    font-family: Prompt, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    white-space: nowrap;
+}
+
+.menuItem:hover
+{
+    border-bottom: 1px solid #000;
+}

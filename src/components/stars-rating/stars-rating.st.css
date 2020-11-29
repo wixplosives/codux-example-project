@@ -1,0 +1,18 @@
+.root
+{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, auto));
+    column-gap: 1px;
+    justify-content: flex-start;
+}
+
+.star
+{
+    -st-states: isHighlighted;
+    color: #000;
+}
+
+.star:not(:isHighlighted)
+{
+    opacity: 0.2;
+}

@@ -1,0 +1,40 @@
+.root
+{
+    font-family: Caudex, serif;
+}
+
+.separator
+{
+    margin: 0 10px;
+    color: rgba(0,0,0,0.8);
+}
+
+.breadCrumbItem
+{
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    transition: color 0.2s;
+    white-space: nowrap;
+
+    -st-states: isCurrent;
+}
+
+.breadCrumbItem:isCurrent
+{
+    color: #000;
+    font-weight: bold;
+}
+
+.breadCrumbItem:not(:isCurrent):hover
+{
+    color: #000;
+    border-bottom: 1px solid #000;
+}

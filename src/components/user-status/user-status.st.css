@@ -1,0 +1,17 @@
+.root
+{
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.root:hover
+{
+    text-decoration: none;
+}
