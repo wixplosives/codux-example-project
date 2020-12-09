@@ -5,7 +5,7 @@ import { FlexLayout } from '../../common-classes/flex-layout/flex-layout';
 import { ImageView } from '../image-view/image-view';
 import { CommonClasses } from '../../common-classes/common-classes/common-classes';
 
-export interface AppProductItemProps extends React.HTMLAttributes<any> {
+export interface AppProductItemProps {
     imageUrl: string;
     modelName?: string;
     productId: string;
@@ -18,6 +18,8 @@ export interface AppProductItemProps extends React.HTMLAttributes<any> {
 
     onAddToCartButtonClick?: (productId: string) => void;
     isAddedToCart?: boolean;
+
+    className?: string;
 }
 
 export const AppProductItem = React.memo<AppProductItemProps>((props) => {
