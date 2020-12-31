@@ -5,7 +5,7 @@ import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 // import { SiteMap } from '../../../src/stores/site-map';
 
 export default createSimulation({
-    name: 'Desktop - 6 Products',
+    name: 'Tablet',
     componentType: AppProductsCollectionPage,
     props: {
         products: [
@@ -102,8 +102,8 @@ export default createSimulation({
             bottom: 0,
             left: 0
         },
-        windowHeight: 736,
-        windowWidth: 1062,
+        windowHeight: 1024,
+        windowWidth: 750,
         canvasWidth: 768,
         canvasHeight: 1477
     },
