@@ -1,3 +1,5 @@
 module.exports = {
-    webpackConfig: require.resolve('./webpack.config'),
-};
+    previewTypeConfiguration: {
+        previewType: 'compiled',
+    },
+}
