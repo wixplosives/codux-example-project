@@ -6,7 +6,7 @@ module.exports = {
         install: {
             title: 'Install',
             description: 'Run install',
-            command: 'yarn',
+            command: 'npm i',
         }
     },
 }
