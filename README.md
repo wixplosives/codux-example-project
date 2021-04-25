@@ -2,9 +2,9 @@
 
 This project was created to showcase the capabilities of Wix Component Studio (WCS). It has been preconfigured to work with WCS, and contains some interesting components and use cases to demonstrate what WCS is capable of.
 
-The project simulates an e-commerce application. Most of the inner components come with simulations to demonstrate various states and views. The individual components in this project, when rendered together, make up the application's product collection page (see the AppProductsCollectionPage component in WCS).
+The project simulates an e-commerce application. Most of the inner components come with simulations to demonstrate various states and views. Individual components in this project, when rendered together, make up the application's product collection page (see the AppProductsCollectionPage component in WCS).
 
-The project can be opened by the WCS desktop application after cloning it. The only prerequisite is that the WCS desktop application be [installed and configured](https://component-studio.wixanswers.com/en/article/installation-and-configuration).
+The only prerequisite required prior to cloning this project is that the WCS desktop application is first [installed and configured](https://component-studio.wixanswers.com/en/article/installation-and-configuration). 
 
 ## Getting Started
 
