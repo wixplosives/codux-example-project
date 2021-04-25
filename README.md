@@ -13,11 +13,11 @@ After setting up the desktop application per the link above, clone the demo proj
 git clone https://github.com/wixplosives/wcs-example-project.git
 ```
 Move into the new directory:
-```
+```console
 cd wcs-example-project
 ```
 Run yarn to install the required dependencies for the project:
-```
+```console
 yarn
 ```
 
