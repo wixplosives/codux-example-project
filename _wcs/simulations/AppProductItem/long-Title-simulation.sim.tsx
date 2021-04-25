@@ -27,7 +27,7 @@ export default createSimulation({
     },
     environmentProps: {
         windowHeight: 726,
-        canvasWidth: 360,
+        canvasWidth: 598,
     },
     name: 'long Title simulation',
 });
