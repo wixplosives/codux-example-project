@@ -23,6 +23,6 @@ yarn
 
 Now open the WCS desktop app and select "Add Project". Browse to the 'wcs-example-project' folder and click "Add".
 
-Refer to [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained) for a more detailed description and breakdown of this project, as well as how to navigate through main features of WCS.
+Refer to [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained) for a more detailed description and breakdown of this project, as well as how to navigate through the main features of WCS.
 
 Enjoy!
