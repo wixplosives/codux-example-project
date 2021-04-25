@@ -1,10 +1,10 @@
 # Wix Component Studio Example Project
 
-This ready-made example project was created to showcase the capabilities of Wix Component Studio (WCS). It simulates an e-commerce application built from of a series of components that together create the AppProductsCollectionPage root component.
+This project was created to showcase the capabilities of Wix Component Studio (WCS). It has been preconfigured to work with WCS, and contains some interesting components and use cases to demonstrate what WCS is capable of.
 
-You'll find that this project is preconfigured to work with WCS, and contains some interesting components and use cases to demonstrate what WCS is capable of. Most of the inner components come with pre-made simulations to demonstrate various states and views.
+The project simulates an e-commerce application. Most of the inner components come with simulations to demonstrate various states and views. The individual components in this project, when rendered together, make up the application's product collection page (see the AppProductsCollectionPage component in WCS).
 
-The project can be opened by the WCS desktop application after cloning it. The only prerequisite that it requires is that the WCS desktop application be [installed and configured](https://component-studio.wixanswers.com/en/article/installation-and-configuration).
+The project can be opened by the WCS desktop application after cloning it. The only prerequisite is that the WCS desktop application be [installed and configured](https://component-studio.wixanswers.com/en/article/installation-and-configuration).
 
 ## Getting Started
 
