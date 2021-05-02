@@ -6,7 +6,7 @@ The project simulates an e-commerce application, where the individual components
 
 ## Getting Started
 
-This project requires the WCS desktop application to view the simulations. You can find the latest release for your system here [here](https://www.wixcomponentstudio.com/download) (contact us for the password).
+This project requires the WCS desktop application to view the simulations. You can find the latest release for your system [here](https://www.wixcomponentstudio.com/download) (contact us for the password).
 
 After installing the desktop application, it can be cloned per the steps outlined in [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained), where you'll also find a detailed breakdown of the example project in the context of WCS.
 
