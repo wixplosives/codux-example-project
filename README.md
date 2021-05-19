@@ -1,13 +1,13 @@
 # Wix Component Studio Example Project
 
-This project was created to showcase the capabilities of Wix Component Studio (WCS). It is ready to use straight out of the box, and contains some interesting components and use cases to demonstrate what WCS is capable of.
+This project simulates an e-commerce application. It is ready for you to use, and enables us to showcase the capabilities of Wix Component Studio (WCS). Use this example to get a feel for WCS, and see how easy and fun it is to build and simulate components with it.
 
-The project simulates an e-commerce application, where the individual components included in this repository, when rendered together, make up the application's product collection page. You'll find that most of the inner components in this project come with simulations to demonstrate various states and views.
+The project includes all the components and simulations you might want to see in different states and views - be sure to check out how the included components look in different screen sizes and environmental conditions!
 
 ## Getting Started
 
-This project requires the WCS desktop application to view the simulations. You can find the latest release for your system [here](https://www.wixcomponentstudio.com/download) (contact us for the password).
+Install the latest version of the WCS desktop application to get started. You can find the latest release for your system [here](https://www.wixcomponentstudio.com/download) (contact us for the password).
 
-After installing the desktop application, it can be cloned per the steps outlined in [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained), where you'll also find a detailed breakdown of the example project in the context of WCS.
+After installing the desktop application, have a look at [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained), where you can find more information about the project and the steps required to open it in WCS.
 
 Enjoy!
