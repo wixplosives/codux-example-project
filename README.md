@@ -6,7 +6,7 @@ The project includes all the components and simulations you might want to see in
 
 ## Getting Started
 
-Install the latest version of the WCS desktop application to get started. You can find the latest release for your system [here](https://www.wixcomponentstudio.com/download) (contact us for the password).
+Install the latest version of the WCS desktop application to get started. You can find the latest release for your system [here](https://www.wixcomponentstudio.com) (contact us for the password).
 
 After installing the desktop application, have a look at [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained), where you can find more information about the project and the steps required to open it in WCS.
 
