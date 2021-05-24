@@ -10,15 +10,16 @@ export default createSimulation({
             'https://static.wixstatic.com/media/d759b6_d1773d716a4746d8b70eb7c15112000e~mv2.png',
         productTitle: 'Swim Swim Swim',
         modelName: 'Red on Cyan',
-        price: '$9.00',
+        price: '$9.00000000',
         reviewsAverageRating: 4,
         reviewsCount: 22,
         isAddedToCart: true,
     },
     setup: [...CommonSimulationsSetup],
     environmentProps: {
-        windowHeight: 726,
+        windowHeight: 640,
         canvasWidth: 360,
+        windowWidth: 360
     },
     name: 'Product Added To Cart',
 });
