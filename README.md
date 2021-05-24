@@ -1,17 +1,13 @@
 # Wix Component Studio Example Project
 
-Example project to be opened by Wix Component Studio desktop application. <br>
-This project comes pre-configured to work with WCS, and contains some interesting components and use cases to get the impression of what WCS can do :)
+This project simulates an e-commerce application. It is ready for you to use, and enables us to showcase the capabilities of Wix Component Studio (WCS). Use this example to get a feel for WCS, and see how easy and fun it is to build and simulate components with it.
+
+The project includes all the components and simulations you might want to see in different states and views - be sure to check out how the included components look in different screen sizes and environmental conditions!
 
 ## Getting Started
 
-```console
-git clone git@github.com:wixplosives/wcs-example-project.git
-cd wcs-example-project
-yarn
-```
+Install the latest version of the WCS desktop application to get started. You can find the latest release for your system [here](https://www.wixcomponentstudio.com) (contact us for the password).
 
-Now open your Wix Component studio desktop app, click "Add Project" and choose the `wcs-example-project` directory.
+After installing the desktop application, have a look at [WCS Example Project Explained](https://component-studio.wixanswers.com/en/article/wcs-example-project-explained), where you can find more information about the project and the steps required to open it in WCS.
 
 Enjoy!
-
