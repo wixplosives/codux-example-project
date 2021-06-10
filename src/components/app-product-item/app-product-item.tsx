@@ -52,14 +52,7 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
             className={style(classes.root, FlexLayout.column.default, className)}
         >
             <div className={style(classes.sectionMain, CommonClasses.positioned)}>
-                <a href={productUrl} className={CommonClasses.resetDefaultStyle}>
-                    <ImageView
-                        src={imageUrl}
-                        className={style(classes.productImage)}
-                        positionHorizontal={'center'}
-                        positionVertical={'center'}
-                    />
-                </a>
+                <a href={productUrl} className={CommonClasses.resetDefaultStyle}></a>
                 <div
                     className={style(
                         classes.addToCartButton,
