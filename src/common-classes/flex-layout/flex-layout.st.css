@@ -1,77 +1,76 @@
-.flexColumnAlignToStart, .flexColumnAlignToEnd, .flexColumnAlignToCenter, .flexColumnStretch, .flexColumnDefault
-{
+.flexColumnAlignToStart,
+.flexColumnAlignToEnd,
+.flexColumnAlignToCenter,
+.flexColumnStretch,
+.flexColumnDefault {
     display: flex;
     flex-flow: column;
 }
 
-.flexRowAlignToStart, .flexRowAlignToEnd, .flexRowAlignToCenter, .flexRowStretch
-{
+.flexRowAlignToStart,
+.flexRowAlignToEnd,
+.flexRowAlignToCenter,
+.flexRowStretch {
     display: flex;
     flex-flow: row;
 }
 
 
-.flexColumnAlignToStart, .flexRowAlignToStart
-{
+.flexColumnAlignToStart,
+.flexRowAlignToStart {
     align-items: flex-start;
 }
 
-.flexColumnAlignToCenter, .flexRowAlignToCenter
-{
+.flexColumnAlignToCenter,
+.flexRowAlignToCenter {
     align-items: center;
 }
 
-.flexColumnAlignToEnd, .flexRowAlignToEnd
-{
+.flexColumnAlignToEnd,
+.flexRowAlignToEnd {
     align-items: flex-end;
 }
 
-.flexColumnStretch, .flexRowStretch
-{
+.flexColumnStretch,
+.flexRowStretch {
     align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.flexCenterContent
-{
+.flexCenterContent {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flexFillRemainingVerticalSpace
-{
+.flexFillRemainingVerticalSpace {
     flex: 1;
     min-height: 0;
 }
 
-.flexFillRemainingHorizontalSpace
-{
+.flexFillRemainingHorizontalSpace {
     flex: 1;
     min-height: 0;
 }
 
-.flexAlignSelfFlexStart
-{
+.flexAlignSelfFlexStart {
     align-self: flex-start;
 }
 
-.flexAlignSelfCenter
-{
+.flexAlignSelfCenter {
     align-self: center;
 }
 
-.flexAlignSelfFlexEnd
-{
+.flexAlignSelfFlexEnd {
     align-self: flex-end;
 }
 
-.flexAlignSelfStretch
-{
+.flexAlignSelfStretch {
     align-self: stretch;
 }
 
-.noShrink
-{
+.noShrink {
     flex-shrink: 0;
 }
 
