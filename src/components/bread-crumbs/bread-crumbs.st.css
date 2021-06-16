@@ -1,6 +1,8 @@
 .root
 {
     font-family: Caudex, serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .separator

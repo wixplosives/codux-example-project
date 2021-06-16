@@ -37,7 +37,7 @@ export const BreadCrumbs = React.memo<BreadCrumbsProps>((props) => {
     });
 
     return (
-        <div className={style(classes.root, className, FlexLayout.row.alignToCenter)}>
+        <div className={style(classes.root, className)}>
             {menuItemsViews}
         </div>
     );
