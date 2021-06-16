@@ -22,7 +22,7 @@ export interface AppProductItemProps {
     className?: string;
 }
 
-export const AppProductItem = React.memo<AppProductItemProps>((props) => {
+export const AppProductItem =((props: AppProductItemProps) => {
     const {
         productId,
         productTitle,
@@ -111,3 +111,4 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
         </div>
     );
 });
+
