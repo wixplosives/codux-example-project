@@ -32,7 +32,7 @@ export default createSimulation({
         ],
         breadCrumbs: [
             {
-                title: 'Home',
+                title: 'Home123',
                 url: '#',
             },
             {
@@ -46,7 +46,10 @@ export default createSimulation({
             {
                 title: 'Recently Added',
                 url: '#'
-            }
+            },
+            {
+                title: 'Recently Added', url: '#'
+            },
         ],
     },
     setup: [...CommonSimulationsSetup],
