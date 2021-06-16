@@ -6,7 +6,7 @@ export default createSimulation({
     name: 'Blahblha',
     componentType: AppProductItem,
     props: {
-        productTitle: 'heyyyy mint',
+        productTitle: 'heyyyy mint heyyyy mint heyyyy mint ה ',
         price: '30$',
         isAddedToCart: true
     },
