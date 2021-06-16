@@ -90,6 +90,10 @@
     color: #000000;
     transition: all 0.2s;
     text-decoration: none;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .priceLabel {
