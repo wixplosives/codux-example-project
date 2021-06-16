@@ -10,9 +10,9 @@ import { classes as classes0 } from '../../common-classes/flex-layout/flex-layou
 export const AppProductItem = React.memo(() => {
 
 
-    return (
-        <div
-            className={classes.root}
-        ></div>
-    );
+      return (
+       <div
+           className={classes.root}
+       ></div>
+   );
 });

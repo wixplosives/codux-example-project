@@ -48,6 +48,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     transition: all 0.2s;
+    width: 100%;
 }
 
 .addToCartButton:not(isAddedToCart) {
@@ -76,10 +77,12 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 31px;
-    letter-spacing: 2px;
+    letter-spacing: normal;
     color: #000000;
     transition: all 0.2s;
     text-decoration: none;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .priceLabel {
