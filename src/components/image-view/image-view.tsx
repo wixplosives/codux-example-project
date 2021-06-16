@@ -1,5 +1,6 @@
 import React from 'react';
 import { style, classes, vars } from './image-view.st.css';
+import { classes as classes0 } from '../app-product-item/app-product-item.st.css';
 
 export interface ImageViewProps {
     resizeMode?: 'fill' | 'cover' | 'contain';
@@ -20,7 +21,7 @@ export const ImageView = React.memo<ImageViewProps>((props) => {
 
     return (
         <img
-            className={style(classes.root, className)}
+            className={style(classes.root, className, classes0.productImage)}
             style={{
                 [vars.objectFit]: resizeMode,
                 [vars.objectPositionVertical]: positionVertical,
