@@ -48,7 +48,6 @@
     font-weight: 300;
     letter-spacing: 2px;
     transition: all 0.2s;
-    background: none;
 }
 
 .addToCartButton:not(isAddedToCart) {
