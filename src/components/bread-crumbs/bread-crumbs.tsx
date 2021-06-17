@@ -1,6 +1,5 @@
 import React from 'react';
 import { style, classes } from './bread-crumbs.st.css';
-import { FlexLayout } from '../../common-classes/flex-layout/flex-layout';
 
 export interface BreadCrumbsItem {
     title: string;
