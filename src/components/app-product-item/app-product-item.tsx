@@ -61,12 +61,7 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                     />
                 </a>
                 <div
-                    className={style(
-                        classes.addToCartButton,
-                        { isAddedToCart: isAddedToCart },
-                        CommonClasses.button,
-                        FlexLayout.centerContent
-                    )}
+
                     onClick={() => {
                         if (onAddToCartButtonClick) {
                             onAddToCartButtonClick(productId);
@@ -80,14 +75,6 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                 ) : null}
             </div>
             <div className={FlexLayout.row.alignToStart}>
-                <div className={FlexLayout.fillRemainingHorizontalSpace}>
-                    <div className={style(classes.title, CommonClasses.button)}>
-                        <a href={productUrl} className={CommonClasses.resetDefaultStyle}>
-                            {productTitle}
-                        </a>
-                    </div>
-                    <div className={style(classes.modelName)}>{modelName}</div>
-                </div>
                 <div className={style(FlexLayout.column.alignToEnd)}>
                     <div className={style(classes.priceLabel)}>{price}</div>
                     {normalizedRating !== undefined ? (
@@ -104,7 +91,14 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                         </div>
                     ) : null}
                 </div>
-            </div>
+                <div className={FlexLayout.fillRemainingHorizontalSpace}>
+                    <div className={style(classes.title, CommonClasses.button)}>
+                        <a href={productUrl} className={CommonClasses.resetDefaultStyle}>
+                            {productTitle}
+                        </a>
+                    </div>
+                    <div className={style(classes.modelName)}>{modelName}</div>
+                </div></div>
             <div
                 className={style(classes.sectionModelNameAndRating, FlexLayout.row.alignToStart)}
             ></div>

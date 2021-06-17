@@ -3,25 +3,21 @@
     -st-default: StarsRating;
 }
 
-.root
-{
+.root {
     font-family: 'Prompt', sans-serif;
 }
 
-.productImage
-{
+.productImage {
     width: 100%;
     margin-bottom: 20px;
     transition: all 0.2s;
 }
 
-.productImage:hover
-{
+.productImage:hover {
     transform: scale(1.1);
 }
 
-.bannerNew
-{
+.bannerNew {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -38,14 +34,12 @@
     color: #fff;
 }
 
-.sectionMain
-{
+.sectionMain {
     background: white;
     margin-bottom: 15px;
 }
 
-.addToCartButton
-{
+.addToCartButton {
     -st-states: isAddedToCart;
     text-transform: uppercase;
     text-align: center;
@@ -55,32 +49,27 @@
     transition: all 0.2s;
 }
 
-.addToCartButton:not(isAddedToCart)
-{
+.addToCartButton:not(isAddedToCart) {
     color: #000;
     border: 1px solid #000;
 }
 
-.addToCartButton:isAddedToCart
-{
+.addToCartButton:isAddedToCart {
     background: #000;
     color: #fff;
 }
 
-.addToCartButton:not(isAddedToCart):hover
-{
+.addToCartButton:not(isAddedToCart):hover {
     background: #000;
     color: #fff;
     transition: all 0.2s;
 }
 
-.addToCartButton:isAddedToCart:hover
-{
-    background: rgba(0,0,0,0.7);
+.addToCartButton:isAddedToCart:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.title
-{
+.title {
     font-family: Caudex, serif;
     font-weight: normal;
     font-stretch: normal;
@@ -101,10 +90,11 @@
     line-height: 31px;
     letter-spacing: normal;
     color: #000000;
+    font-size: 16px;
+    font-size: 11px;
 }
 
-.modelName
-{
+.modelName {
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -114,19 +104,16 @@
     margin-top: 6px;
 }
 
-.rating
-{
+.rating {
     margin-top: 10px;
 }
 
-.starsRating
-{
+.starsRating {
     -st-extends: StarsRating;
     font-size: 12px;
 }
 
-.reviewsCount
-{
+.reviewsCount {
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -144,13 +131,12 @@
         font-size: 22px;
     }
 
-    .modelName
-    {
+    .modelName {
         font-size: 14px;
     }
 
     .priceLabel {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .reviewsCount {
@@ -172,18 +158,16 @@
         font-size: 24px;
     }
 
-    .title:hover
-    {
+    .title:hover {
         transform: skewX(-8deg);
     }
 
-    .modelName
-    {
+    .modelName {
         font-size: 16px;
     }
 
     .priceLabel {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .reviewsCount {

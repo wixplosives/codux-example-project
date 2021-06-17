@@ -28,6 +28,7 @@ export default createSimulation({
     environmentProps: {
         windowHeight: 726,
         canvasWidth: 360,
+        windowWidth: 652
     },
     name: 'Controlled isAddedToCart',
 });
