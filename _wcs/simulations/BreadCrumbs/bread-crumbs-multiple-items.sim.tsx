@@ -6,7 +6,14 @@ import { SiteMap } from '../../../src/stores/site-map';
 export default createSimulation({
     componentType: BreadCrumbs,
     props: {
-        items: [SiteMap.HomePage, SiteMap.NewCollections, SiteMap.DivaCollection],
+        items: [{
+            title: 'Home',
+            url: '#'
+        }, {
+            title: 'Shop', url: '#'
+        }, {
+            title: 'Notebook Collection', url: '#'
+        },],
     },
     environmentProps: {},
     setup: [...CommonSimulationsSetup],
