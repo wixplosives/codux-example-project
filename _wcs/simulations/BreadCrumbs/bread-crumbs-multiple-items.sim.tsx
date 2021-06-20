@@ -14,7 +14,14 @@ export default createSimulation({
             title: 'Notebook Collection', url: '#'
         },],
     },
-    environmentProps: {},
+    environmentProps: {
+        windowWidth: 1006,
+        windowHeight: 768,
+        canvasWidth: 253,
+        canvasHeight: 69,
+        windowBackgroundColor: '#f1ebeb',
+        canvasBackgroundColor: '#f1ebeb',
+    },
     setup: [...CommonSimulationsSetup],
     name: 'Multiple Items',
 });

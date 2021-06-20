@@ -29,7 +29,7 @@ export const BreadCrumbs = React.memo<BreadCrumbsProps>((props) => {
                     <a className={style(classes.breadCrumbItem, {})} href={menuItem.url}>
                         {menuItem.title}
                     </a>
-                    <div className={style(classes.separator)}>{`>`}</div>
+                    <div className={style(classes.separator)}>{`&`}</div>
                 </React.Fragment>
             );
         }
