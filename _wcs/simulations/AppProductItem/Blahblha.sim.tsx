@@ -7,7 +7,7 @@ export default createSimulation({
     componentType: AppProductItem,
     props: {
         productTitle: 'heyyyy mint heyyyy mint heyyyy mint ה ',
-        price: '30$',
+        price: '300$',
         isAddedToCart: true
     },
     environmentProps: {
