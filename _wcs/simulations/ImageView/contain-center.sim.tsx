@@ -14,7 +14,7 @@ export default createSimulation({
     },
     environmentProps: {
         canvasHeight: 250,
-        canvasWidth: 250,
+        canvasWidth: 262,
     },
     wrapper: ({ renderSimulation }) => {
         return <CanvasStretchingView>{renderSimulation()}</CanvasStretchingView>;
