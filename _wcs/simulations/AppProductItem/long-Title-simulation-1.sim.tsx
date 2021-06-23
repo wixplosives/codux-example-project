@@ -9,13 +9,11 @@ export default createSimulation({
         productId: 'grw2as',
         imageUrl:
             'https://static.wixstatic.com/media/d759b6_d1773d716a4746d8b70eb7c15112000e~mv2.png',
-        productTitle: 'Swim Swim Swim',
+        productTitle: 'Swim Swim Swim Swim Swim Swima Swim Swim Swima Swim Swim Swima Swim Swim Swima Swim Swim Swima  Swim Swim Swima',
         modelName: 'Red on Cyan',
         price: '$9.00',
         reviewsAverageRating: 4,
         reviewsCount: 22,
-        isNew: true,
-        isAddedToCart: true
     },
     setup: [...CommonSimulationsSetup],
     wrapper: ({ renderSimulation }) => {
@@ -29,7 +27,7 @@ export default createSimulation({
     },
     environmentProps: {
         windowHeight: 726,
-        canvasWidth: 360,
+        canvasWidth: 598,
     },
-    name: 'Controlled isAddedToCart',
+    name: 'long Title simulation 1',
 });

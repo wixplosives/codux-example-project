@@ -6,7 +6,7 @@ export default createSimulation({
     name: 'Rating 0',
     componentType: StarsRating,
     props: {
-        rating: 0,
+        rating: 5,
     },
     setup: [FontAwesomeLoader],
     environmentProps: {},

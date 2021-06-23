@@ -54,9 +54,12 @@ export default createSimulation({
         canvasMargin: {
             left: 0,
             top: 0,
-            right: 0,
+            bottom: 0,
+            right: 0
         },
-        windowHeight: 732,
-        windowWidth: 1048,
+        windowHeight: 839,
+        windowWidth: 808,
+        windowBackgroundColor: '#b19c9c',
+        canvasBackgroundColor: '#d6d4d4'
     },
 });
