@@ -28,8 +28,7 @@ export const BreadCrumbs = React.memo<BreadCrumbsProps>((props) => {
             return (
                 <React.Fragment key={index}>
                     <a className={style(classes.breadCrumbItem, {})} href={menuItem.url}>
-                        {menuItem.title}
-                    </a>
+                        {menuItem.title}</a>
                     <div className={style(classes.separator)}>{`>`}</div>
                 </React.Fragment>
             );

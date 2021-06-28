@@ -5,12 +5,14 @@ import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 export default createSimulation({
     componentType: AppProductItem,
     props: {
-       
+
     },
     setup: [...CommonSimulationsSetup],
     environmentProps: {
         windowHeight: 726,
         canvasWidth: 360,
+        windowWidth: 908,
+        canvasHeight: 455
     },
     name: 'Product Card',
 });

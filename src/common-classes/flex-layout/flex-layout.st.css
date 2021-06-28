@@ -5,6 +5,8 @@
 .flexColumnDefault {
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
+    padding-bottom: 0px;
 }
 
 .flexRowAlignToStart,
@@ -13,12 +15,15 @@
 .flexRowStretch {
     display: flex;
     flex-flow: row;
+    height: 25px;
 }
 
 
 .flexColumnAlignToStart,
 .flexRowAlignToStart {
     align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 5px;
 }
 
 .flexColumnAlignToCenter,

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Pinegrow - TailwindCSS Blocks Template</title>
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.0.2/dist/tailwind.min.css">
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+        <meta name="description" content="Pinegrow Web Editor - Shop TailwindCSS Template">
+    </head>
+    <body class="font-light text-gray-500">
+        <header class="bg-white"> 
+            <nav class="container flex flex-wrap items-center mx-auto px-4 py-3"> 
+                <a href="#" class="font-bold hover:text-gray-300 mr-3 text-gray-800 text-xl">                 Company </a>
+                <div class="ml-auto px-2 lg:order-2">
+                    <div class="flex flex-row ml-auto"> 
+                        <a href="#" class="hover:text-gray-300 px-2 py-4" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em" class="inline-block">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>
+                                </g>
+                            </svg></a> 
+                        <a href="#" class="hover:text-gray-300 px-2 py-4" aria-label="View cart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em" class="inline-block">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                </g>
+                            </svg><span>(0)</span></a> 
+                        <a href="#" class="hover:text-gray-300 px-2 py-4" aria-label="Account"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em" class="inline-block">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-4.987-3.744A7.966 7.966 0 0 0 12 20c1.97 0 3.773-.712 5.167-1.892A6.979 6.979 0 0 0 12.16 16a6.981 6.981 0 0 0-5.147 2.256zM5.616 16.82A8.975 8.975 0 0 1 12.16 14a8.972 8.972 0 0 1 6.362 2.634 8 8 0 1 0-12.906.187zM12 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                                </g>
+                            </svg></a> 
+                    </div>
+                </div>
+                <button class="hover:bg-gray-800 hover:text-white px-3 py-2 rounded text-gray-800 lg:hidden" data-name="nav-toggler" data-pg-ia='{"l":[{"name":"NabMenuToggler","trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true"}]}'> 
+                    <span class="block border-b-2 border-current my-1 w-6"></span> 
+                    <span class="block border-b-2 border-current my-1 w-6"></span> 
+                    <span class="block border-b-2 border-current my-1 w-6"></span> 
+                </button>
+                <div data-name="nav-menu" class="lg:flex lg:space-x-4 lg:space-y-0 lg:w-auto space-y-2 w-full hidden lg:items-center flex-grow"> 
+                    <div class="flex flex-col ml-auto lg:flex-row"> 
+                        <a href="#" class="hover:text-gray-300 px-0 py-2 lg:px-4">Home</a> 
+                        <a href="#" class="hover:text-gray-300 px-0 py-2 lg:px-4">About</a> 
+                        <a href="#" class="hover:text-gray-300 px-0 py-2 lg:px-4">Collection</a> 
+                        <a href="#" class="hover:text-gray-300 px-0 py-2 lg:px-4">Shop</a>
+                        <a href="#" class="hover:text-gray-300 px-0 py-2 lg:px-4">Blog</a> 
+                    </div>                     
+                </div>                 
+            </nav>             
+        </header>
+        <section class="bg-gray-800 relative text-white"> 
+            <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI0fHxmYXNoaW9uJTIwc2hvb3R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full inset-0 object-center object-cover w-full" alt="Hero image" width="1080" height="720"/>
+            <div class="container mx-auto px-4 py-48 relative"> 
+                <div class="flex flex-wrap -mx-4"> 
+                    <div class="px-4 w-full md:w-10/12 lg:w-7/12"> 
+                        <p class="mb-2 text-2xl uppercase">New Collection</p> 
+                        <h1 class="font-bold mb-4 text-7xl">Best Fabric Meets New Style</h1> 
+                        <p class="mb-6 text-xl">Our ability to feel, act and communicate is indistinguishable from magic.</p> 
+                        <a href="#" class="bg-white font-normal hover:bg-gray-300 inline-block leading-relaxed px-6 py-2 rounded text-gray-800">Shop Collection</a> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </section>
+        <main class="py-12">
+            <section> 
+                <div class="container mx-auto px-4"> 
+                    <div class="-mx-4 flex flex-wrap justify-center"> 
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <a href="#" class="block group pb-12 pt-36 px-6 relative"> <img src="https://images.unsplash.com/photo-1467043237213-65f2da53396f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDMwNnx8d29tZW4lMjBjbG90aGVzfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full group-hover:opacity-75 left-0 object-left object-none top-0 w-full" alt="Product image" width="1080" height="720"/><div class="relative">
+                                    <h2 class="font-semibold mb-4 text-gray-800 text-xl">Mens Summer Collection</h2>
+                                    <p class="group-hover:underline text-sm">View Collection</p>
+                                </div> </a> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <a href="#" class="block group pb-12 pt-36 px-6 relative"> <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI1M3x8d29tZW4lMjBjbG90aGVzfGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full group-hover:opacity-75 left-0 object-left object-none top-0 w-full" alt="Product image" width="1080" height="720"/><div class="relative">
+                                    <h2 class="font-semibold mb-4 text-gray-800 text-xl">Womens New Arrival</h2>
+                                    <p class="group-hover:underline text-sm">View Collection</p>
+                                </div> </a> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <a href="#" class="block group pb-12 pt-36 px-6 relative"> <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDEwMjR8fHdvbWVuJTIwY2xvdGhlc3xlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full group-hover:opacity-75 left-0 object-left object-none top-0 w-full" alt="Product image" width="1080" height="720"/><div class="relative">
+                                    <h2 class="font-semibold mb-4 text-gray-800 text-xl">Accessories Collection</h2>
+                                    <p class="group-hover:underline text-sm">View Collection</p>
+                                </div> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="py-4"> 
+                <div class="container mx-auto px-4  relative"> 
+                    <div class="bg-gray-700 text-center">
+                        <div class="flex flex-wrap -mx-4 items-center"> 
+                            <div class="px-4 py-16 w-full lg:py-0 lg:w-6/12">
+                                <div class="px-12">
+                                    <h2 class="font-medium text-gray-400 text-lg">Grab your collection today</h2>
+                                    <h3 class="font-bold mb-6 text-5xl text-white">                             Seasonal sale upto 70% off</h3>
+                                    <a href="#" class="bg-white font-normal hover:bg-gray-300 inline-block leading-relaxed px-6 py-2 rounded text-gray-800">Shop Collection</a>
+                                </div>                                 
+                            </div>                             
+                            <div class="px-4 w-full lg:w-6/12"> 
+                                <img src="https://images.unsplash.com/photo-1610970161790-57a21fc7d775?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=480&h=320&fit=crop" class="w-full" alt="CTA image" width="480" height="320"> 
+                            </div>                             
+                        </div>
+                    </div>                     
+                </div>                 
+            </section>
+            <div class="container mx-auto px-4 py-6 relative">
+                <div class="flex flex-no-wrap items-center"> 
+                    <div class="bg-gray-300 flex-grow h-px max-w-full"></div>                     
+                    <div class="px-10 w-auto"> 
+                        <h2 class="font-normal text-gray-800 text-xl">Popular this Week</h2> 
+                    </div>                     
+                    <div class="bg-gray-300 flex-grow h-px max-w-full"></div>                     
+                </div>                 
+            </div>
+            <section> 
+                <div class="container mx-auto px-4"> 
+                    <div class="flex flex-wrap -mx-4  justify-center"> 
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1598403031688-e7cfd2c222c4?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM2NXx8dCUyMHNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <s class="mr-2">$ 95</s>
+                                    <span class="font-medium text-red-500">$ 75</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1589747297079-6ab76138dcab?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHQtc2hpcnR8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 100</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1554526735-356bb52de232?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIxfHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 95</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM0OXx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+</div>
+                                <span class="mr-2">$ 75</span> 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1605295982505-556d4026a930?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDg4fHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 115</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1604908695926-17ee04a3c54f?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE4M3x8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <s class="mr-2">$ 125</s>
+                                    <span class="font-medium text-red-500">$ 100</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1554971052-d465be00ca02?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIyNHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 95</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1600823722907-43f78d7ba93f?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIyOHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 100</span>
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="py-6"> 
+                <div class="container mx-auto px-4"> 
+                    <div class="-mx-4 flex flex-wrap justify-center"> 
+                        <div class="p-4 w-full md:w-6/12 lg:w-6/12"> 
+                            <a href="#" class="block group pb-12 pt-48 px-6 relative"> <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDd8fHNuZWFrZXJ8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full group-hover:opacity-75 left-0 object-center object-none top-0 w-full" alt="Product image" width="1080" height="720"/><div class="relative">
+                                    <h2 class="font-semibold mb-4 text-2xl text-gray-800">Mens Summer Collection</h2>
+                                    <p class="group-hover:underline">View Collection</p>
+                                </div> </a> 
+                        </div>
+                        <div class="p-4 w-full md:w-6/12 lg:w-6/12"> 
+                            <a href="#" class="block group pb-12 pt-48 px-6 relative"> <img src="https://images.unsplash.com/photo-1534534734151-83bc15801803?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ5Nnx8bW9kZWwlMjBkcmVzc3xlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full group-hover:opacity-75 left-0 object-center object-none top-0 w-full" alt="Product image" width="1080" height="720"/><div class="relative">
+                                    <h2 class="font-semibold mb-4 text-2xl text-gray-800">Womens New Arrival</h2>
+                                    <p class="group-hover:underline">View Collection</p>
+                                </div> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <div class="container mx-auto px-4 py-6 relative">
+                <div class="flex flex-no-wrap items-center"> 
+                    <div class="bg-gray-300 flex-grow h-px max-w-full"></div>                     
+                    <div class="px-10 w-auto"> 
+                        <h2 class="font-normal text-gray-800 text-xl">Latest Arrival</h2> 
+                    </div>                     
+                    <div class="bg-gray-300 flex-grow h-px max-w-full"></div>                     
+                </div>                 
+            </div>
+            <section> 
+                <div class="container mx-auto px-4"> 
+                    <div class="flex flex-wrap -mx-4  justify-center"> 
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1553798397-0aee146267a1?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ4fHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <s class="mr-2">$ 95</s>
+                                    <span class="font-medium text-red-500">$ 75</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1569033083669-a63ea13bc769?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM2NHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 100</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1611986773179-7d14794ede62?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ2Nnx8dCUyMHNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 95</span>
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="p-4 w-6/12 md:w-4/12 lg:w-3/12"> 
+                            <div> 
+                                <a href="#" class="block hover:opacity-75 mb-4"><img src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDcwOXx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="w-full" alt="Product image" width="500" height="700"></a> 
+                                <a href="#" class="hover:text-gray-800 hover:underline inline-block mb-2 text-sm">Armani</a>
+                                <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-medium leading-tight text-lg">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <span class="mr-2">$ 75</span>
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div class="py-6 text-center">
+                        <a href="#" class="bg-gray-800 font-normal hover:bg-gray-600 inline-block leading-relaxed px-6 py-2 rounded text-white">View More</a>
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="bg-gray-50 my-12 py-12 text-center"> 
+                <div class="container mx-auto px-4"> 
+                    <div class="-mx-4 flex flex-wrap justify-center"> 
+                        <div class="p-4 w-full sm:w-6/12 lg:w-4/12">
+                            <div class="xl:px-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 inline-block mb-6 text-gray-800 w-12" fill="currentColor"> 
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/>
+                                    </g>                                     
+                                </svg>
+                                <h2 class="font-bold mb-4 text-gray-800 text-xl">Free Shipping</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod</p>
+                            </div>                             
+                        </div>                         
+                        <div class="p-4 w-full sm:w-6/12 lg:w-4/12">
+                            <div class="xl:px-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 inline-block mb-6 text-gray-800 w-12" fill="currentColor"> 
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM12 13.5l2.939 1.545-.561-3.272 2.377-2.318-3.286-.478L12 6l-1.47 2.977-3.285.478 2.377 2.318-.56 3.272L12 13.5z"/>
+                                    </g>                                     
+                                </svg>
+                                <h2 class="font-bold mb-4 text-gray-800 text-xl">100% Authentic</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod</p>
+                            </div>                             
+                        </div>                         
+                        <div class="p-4 w-full sm:w-6/12 lg:w-4/12">
+                            <div class="xl:px-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 inline-block mb-6 text-gray-800 w-12" fill="currentColor"> 
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zM7.197 14.682l-2.175 2.174a8.549 8.549 0 0 0 1.818 1.899l.305.223 2.173-2.175a5.527 5.527 0 0 1-1.98-1.883l-.14-.238zm9.606 0a5.527 5.527 0 0 1-1.883 1.98l-.238.14 2.174 2.176a8.549 8.549 0 0 0 1.899-1.818l.223-.304-2.175-2.174zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM7.145 5.022a8.549 8.549 0 0 0-1.9 1.818l-.223.305 2.175 2.173a5.527 5.527 0 0 1 1.883-1.98l.238-.14-2.173-2.176zm9.71 0l-2.173 2.175a5.527 5.527 0 0 1 1.98 1.883l.14.238 2.176-2.173a8.549 8.549 0 0 0-1.818-1.9l-.304-.223z"/>
+                                    </g>                                     
+                                </svg>
+                                <h2 class="font-bold mb-4 text-gray-800 text-xl">24/7 Online Support</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod</p>
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <div class="container mx-auto px-4 py-6 relative">
+                <div class="flex flex-no-wrap items-center"> 
+                    <div class="bg-gray-300 flex-grow h-px max-w-full"></div>                     
+                    <div class="px-10 w-auto"> 
+                        <h2 class="font-normal text-gray-800 text-xl">From Our Blog</h2> 
+                    </div>                     
+                    <div class="bg-gray-300 flex-grow h-px max-w-full"></div>                     
+                </div>                 
+            </div>
+            <section> 
+                <div class="container mx-auto px-4"> 
+                    <div class="flex flex-wrap -mx-4  justify-center"> 
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="bg-white border flex flex-col h-full overflow-hidden rounded-md"> 
+                                <a href="#" class="block hover:opacity-75"><img src="https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI4fHx0cmF2ZWx8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=350&h=240&fit=crop" class="w-full" alt="Blog image" width="350" height="240"/></a> 
+                                <div class="p-4"> 
+                                    <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-semibold leading-tight text-xl">Travelling as a way of self-discovery and progress</h3></a> 
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p> 
+                                </div>                                 
+                                <div class="bg-gray-100 border-t flex items-center justify-between mt-auto px-4 py-2 text-gray-600 text-xs"> 
+                                    <a href="#" class="hover:text-gray-500 inline-flex items-center space-x-2"> <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-12 rounded-full w-12" alt="Author image" width="400" height="400"/><div> 
+                                            <h4 class="font-semibold text-base">Dianne Russell</h4> 
+                                            <p>10 August 2020</p> 
+                                        </div></a> 
+                                    <span>6 min read</span> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="bg-white border flex flex-col h-full overflow-hidden rounded-md"> 
+                                <a href="#" class="block hover:opacity-75"><img src="https://images.unsplash.com/photo-1577327966244-999949c7e884?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDEyfHxidXNpbmVzcyUyMHBob3RvZ3JhcGhlcnxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=350&h=240&fit=crop" class="w-full" alt="Blog image" width="350" height="240"/></a> 
+                                <div class="p-4"> 
+                                    <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-semibold leading-tight text-xl">Where to grow your business as a photographer: site or social media?</h3></a> 
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p> 
+                                </div>                                 
+                                <div class="bg-gray-100 border-t flex items-center justify-between mt-auto px-4 py-2 text-gray-600 text-xs"> 
+                                    <a href="#" class="hover:text-gray-500 inline-flex items-center space-x-2"> <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDd8fGNhdHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-12 rounded-full w-12" alt="Author image" width="400" height="400"/><div> 
+                                            <h4 class="font-semibold text-base">Kathryn Murphy</h4> 
+                                            <p>10 August 2020</p> 
+                                        </div></a> 
+                                    <span>6 min read</span> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
+                            <div class="bg-white border flex flex-col h-full overflow-hidden rounded-md"> 
+                                <a href="#" class="block hover:opacity-75"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE0MHx8Y29sb3JzJTIwd2Vic2l0ZXxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=350&h=240&fit=crop" class="w-full" alt="Blog image" width="350" height="240"/></a> 
+                                <div class="p-4"> 
+                                    <a href="#" class="block hover:text-gray-500 mb-2 text-gray-800"><h3 class="font-semibold leading-tight text-xl">How to choose the right colors when creating a website?</h3></a> 
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p> 
+                                </div>                                 
+                                <div class="bg-gray-100 border-t flex items-center justify-between mt-auto px-4 py-2 text-gray-600 text-xs"> 
+                                    <a href="#" class="hover:text-gray-500 inline-flex items-center space-x-2"> <img src="https://images.unsplash.com/photo-1517101724602-c257fe568157?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDZ8fHBhcnJvdHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-12 rounded-full w-12" alt="Author image" width="400" height="400"/><div> 
+                                            <h4 class="font-semibold text-base">Darrell Steward</h4> 
+                                            <p>10 August 2020</p> 
+                                        </div></a> 
+                                    <span>6 min read</span> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+            <div class="container mt-12 mx-auto px-4 py-6 relative">
+                <div class="bg-gray-300 h-px w-full"></div>                 
+            </div>
+            <section class="py-20 text-center"> 
+                <div class="container mx-auto px-4"> 
+                    <div class="flex flex-wrap -mx-4"> 
+                        <div class="mx-auto p-4 w-full lg:w-8/12"> 
+                            <h2 class="font-medium mb-2 text-4xl text-gray-800">Join our newsletter and get 15% off</h2> 
+                            <p class="mb-12">Sign up for our newsletter to receive updates and exclusive offers</p> 
+                            <form class="mx-auto sm:w-9/12 xl:w-8/12"> 
+                                <div class="bg-white border border-gray-300 flex items-center overflow-hidden p-1"> 
+                                    <input class="appearance-none border-blue-600 flex-1 outline-none px-5 py-2 text-gray-600 w-full" placeholder="Enter email..." type="email"/> 
+                                    <a href="#" class="bg-gray-800 font-normal hover:bg-gray-600 inline-block px-8 py-2 text-center text-white">Sign Up</a> 
+                                </div>                                 
+                            </form>
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+        </main>
+        <section> 
+            <div class="flex flex-wrap"> 
+                <img src="https://images.unsplash.com/photo-1524738258074-f8125c6a7588?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-auto w-2/12" alt="Instagram image" width="400" height="400"/>
+                <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-auto w-2/12" alt="Instagram image" width="400" height="400"/>
+                <img src="https://images.unsplash.com/photo-1477044545293-98b9221de30a?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-auto w-2/12" alt="Instagram image" width="400" height="400"/>
+                <img src="https://images.unsplash.com/photo-1603217192634-61068e4d4bf9?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-auto w-2/12" alt="Instagram image" width="400" height="400"/>
+                <img src="https://images.unsplash.com/photo-1583001308455-e5d48b880c67?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-auto w-2/12" alt="Instagram image" width="400" height="400"/>
+                <img src="https://images.unsplash.com/photo-1579362094443-5d73793e4d3c?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="h-auto w-2/12" alt="Instagram image" width="400" height="400"/> 
+            </div>             
+        </section>
+        <footer class="bg-gray-800 pt-12 text-white"> 
+            <div class="container mx-auto px-4"> 
+                <div class="flex flex-wrap -mx-4"> 
+                    <div class="w-full p-4 xl:w-4/12"> 
+                        <a href="#" class="font-semibold hover:text-gray-300 inline-block mb-6 mr-auto text-3xl text-white uppercase">                 Company </a> 
+                        <p class="mb-4">                             Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper. </p> 
+                        <div class="mb-6"> 
+                            <a href="#" class="hover:text-gray-400">+1 234 567-890</a> 
+                            <br> 
+                            <a href="#" class="hover:text-gray-400">hello@fantico.com</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="p-4 w-full sm:w-6/12 md:w-3/12 xl:w-2/12"> 
+                        <h2 class="font-medium mb-8 text-xl uppercase">                             About </h2> 
+                        <ul> 
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Get Quote</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Enterprise Plan</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Become an Affiliate</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Our Portfolio</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="p-4 w-full sm:w-6/12 md:w-3/12 xl:w-2/12"> 
+                        <h2 class="font-medium mb-8 text-xl uppercase">                             Services </h2> 
+                        <ul> 
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Web Design</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Web Development</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">WordPress</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Digital Marketing</a> 
+                            </li>                             
+                            <li class="mb-4"> 
+                                <a href="#" class="hover:text-gray-400">Content Writing</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="p-4 w-full md:w-6/12 xl:w-4/12"> 
+                        <h2 class="font-medium mb-8 text-xl uppercase">Subscribe</h2> 
+                        <p class="mb-4">                             Subscribe to our newsletter and get exclusive updates directly in your inbox. </p> 
+                        <form> 
+                            <div class="bg-white border border-gray-400 flex items-center mb-6 overflow-hidden p-1"> 
+                                <input class="appearance-none border-blue-600 flex-1 font-light outline-none p-2 text-gray-600 w-full" placeholder="Enter email..." type="email"/> 
+                                <a href="#" class="bg-gray-800 font-medium hover:bg-gray-600 inline-block px-6 py-2 text-center text-white uppercase" aria-label="submit"><svg viewBox="0 0 24 24" fill="currentColor" class="h-4 inline-block w-4"> 
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/> 
+                                    </svg></a> 
+                            </div>                             
+                        </form>                         
+                        <h2 class="font-bold mb-4 text-lg uppercase">Get Social</h2> 
+                        <div class="flex-wrap inline-flex space-x-3"> 
+                            <a href="#" class="hover:text-gray-400" aria-label="facebook link"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/> 
+                                </svg></a> 
+                            <a href="#" class="hover:text-gray-400" aria-label="twitter link"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/> 
+                                </svg></a> 
+                            <a href="#" class="hover:text-gray-400" aria-label="instagram link"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
+                                </svg></a> 
+                            <a href="#" class="hover:text-gray-400" aria-label="linkedin link"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/> 
+                                </svg></a> 
+                            <a href="#" class="hover:text-gray-400" aria-label="youtube link"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/> 
+                                </svg></a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="py-4 text-sm"> 
+                    <hr class="border-gray-400 mb-4"> 
+                    <div class="flex flex-wrap -mx-4  items-center"> 
+                        <div class="px-4 py-2 w-full md:flex-1"> 
+                            <p>&copy; 2002 - 2021. All Rights Reserved - Company Name</p> 
+                        </div>                         
+                        <div class="px-4 py-2 w-full sm:w-auto"> 
+                            <a href="#" class="hover:text-gray-400">Privacy Policy</a> |                      
+                            <a href="#" class="hover:text-gray-400">Terms of Use</a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+        <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
