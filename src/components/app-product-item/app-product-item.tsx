@@ -5,7 +5,6 @@ import { FlexLayout } from '../../common-classes/flex-layout/flex-layout';
 import { ImageView } from '../image-view/image-view';
 import { CommonClasses } from '../../common-classes/common-classes/common-classes';
 
-
 export interface AppProductItemProps {
     /** Where the image is located */
     imageUrl: string;
