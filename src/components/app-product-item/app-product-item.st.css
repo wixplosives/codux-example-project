@@ -115,11 +115,9 @@
     -st-extends: StarsRating;
     font-size: 12px;
     padding-left: 5px;
-    height: 2px;
-    height: 29px;
     padding-bottom: 0px;
     margin-top: 5px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 .reviewsCount {
@@ -202,7 +200,7 @@
     padding-top: 5px;
     padding-left: 5px;
     height: 80px;
-    height: 8px;
+    height: 20px;
 
 }
 
@@ -212,7 +210,9 @@
     font-weight: 500;
     font-family: 'TradeGothicLTStd', sans-serif;
     color: #b20000;
-    line-height: 32px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .productOrigPrice {
@@ -221,8 +221,10 @@
     font-weight: 400;
     opacity: 0.5;
     font-family: 'TradeGothicLTStd', sans-serif;
-    line-height: 32px;
+    line-height: 20px;
     text-decoration: line-through;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .footer {

@@ -9,4 +9,5 @@ module.exports = {
             command: 'npm i',
         }
     },
+    simulationGlobalSetup: ''
 }
