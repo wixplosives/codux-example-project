@@ -5,23 +5,32 @@ import { FlexLayout } from '../../common-classes/flex-layout/flex-layout';
 import { ImageView } from '../image-view/image-view';
 import { CommonClasses } from '../../common-classes/common-classes/common-classes';
 
+
 export interface AppProductItemProps {
+    /** Where the image is located */
     imageUrl: string;
+    /** Model of product */
     modelName?: string;
+    /** ID of product */
     productId: string;
+    /** Title of product */
     productTitle: string;
+    /** Product cost */
     price: string;
+    /** Toggles the 'new' button on and off */
     isNew?: boolean;
-
-    reviewsAverageRating?: number;
-    reviewsCount?: number;
-
-    onAddToCartButtonClick?: (productId: string) => void;
+    /** Average ratings, depicted by stars */
+    reviewsAverageRating?: number; 
+    /** Number of submitted reviews */
+    reviewsCount?: number; 
+    /** Function for when the add to cart button is clicked */
+    onAddToCartButtonClick?: (productId: string) => void; 
+    /** True/False state for if the product has been added to the user's cart */
     isAddedToCart?: boolean;
-
+    /** Class to pass to the component's root */
     className?: string;
 }
-
+/** This component represents a single product item. */
 export const AppProductItem = React.memo<AppProductItemProps>((props) => {
     const {
         productId,
