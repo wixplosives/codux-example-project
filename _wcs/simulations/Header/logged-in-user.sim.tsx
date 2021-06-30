@@ -13,7 +13,7 @@ export default createSimulation({
             { title: SiteMap.Shop.title, url: SiteMap.Shop.url },
             { title: SiteMap.About.title, url: SiteMap.About.url },
         ],
-        shoppingCartItemsCount: 2,
+        shoppingCartItemsCount: 13
     },
     environmentProps: {
         canvasWidth: 450,
@@ -30,10 +30,19 @@ export default createSimulation({
                 value={{
                     imageUrl: 'https://randomuser.me/api/portraits/men/15.jpg',
                     username: 'johnd',
-                    fullName: 'John Doe',
+                    fullName: 'John Doeagfadfpgj ',
                 }}
             >
-                {renderSimulation()}
+                <div
+                    num="3"
+                    mystring="Hellog"
+
+                >
+
+                </div>
+                {renderSimulation(
+                    { shoppingCartItemsCount: 3 }
+                )}
             </LoggedInUserContext.Provider>
         );
     },

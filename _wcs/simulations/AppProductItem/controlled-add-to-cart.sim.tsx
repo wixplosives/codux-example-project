@@ -6,14 +6,15 @@ import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 export default createSimulation({
     componentType: AppProductItem,
     props: {
-        productId: 'grw2as',
+        productId: 10,
         imageUrl:
             'https://static.wixstatic.com/media/d759b6_d1773d716a4746d8b70eb7c15112000e~mv2.png',
-        productTitle: 'Swim Swim Swim',
+        productTitle: xasxac ,
         modelName: 'Red on Cyan',
-        price: '$9.00',
+        price: '//////',
         reviewsAverageRating: 4,
         reviewsCount: 22,
+        isAddedToCart: true
     },
     setup: [...CommonSimulationsSetup],
     wrapper: ({ renderSimulation }) => {
