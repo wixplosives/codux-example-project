@@ -19,7 +19,9 @@ export const AppProductItem = React.memo(() => {
             </div>
             <div className={style(classes0.flexColumnAlignToStart, classes.footer)}>
                 <a href="/" className={classes.productLink}>
-                    <h1 className={classes.productTitle}>RHODE BLACK LEATHER</h1></a>
+                    <h1 className={classes.productTitle}>RHODE BLACK LEATHER</h1>
+                    <h3>Product description</h3>
+                </a>
                 <div className={classes0.flexRowAlignToStart}>
                     <h1 className={classes.productOrigPrice}>$84.95</h1>
                     <h1 className={classes.productPrice}>$59.99</h1>
