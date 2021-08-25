@@ -19,11 +19,11 @@ export interface AppProductItemProps {
     /** Toggles the 'new' button on and off */
     isNew?: boolean;
     /** Average ratings, depicted by stars */
-    reviewsAverageRating?: number; 
+    reviewsAverageRating?: number;
     /** Number of submitted reviews */
-    reviewsCount?: number; 
+    reviewsCount?: number;
     /** Function for when the add to cart button is clicked */
-    onAddToCartButtonClick?: (productId: string) => void; 
+    onAddToCartButtonClick?: (productId: string) => void;
     /** True/False state for if the product has been added to the user's cart */
     isAddedToCart?: boolean;
     /** Class to pass to the component's root */
@@ -87,32 +87,23 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                     <div className={style(classes.bannerNew, FlexLayout.centerContent)}>New</div>
                 ) : null}
             </div>
-            <div className={FlexLayout.row.alignToStart}>
+            <div>
+                <div className={`${FlexLayout.column.alignToEnd}`}>
+                    <div className={classes.priceLabel}>{price}</div>
+                    {normalizedRating !== undefined ? <div className={classes.rating}>
+                        <StarsRating className={classes.starsRating} rating={normalizedRating} />
+                        {reviewsCount !== undefined ? <div className={classes.reviewsCount}>
+                            ({reviewsCount} reviews)
+                        </div> : null}
+                    </div> : null}
+                </div>
                 <div className={FlexLayout.fillRemainingHorizontalSpace}>
+                    <div className={classes.modelName}>{modelName}</div>
                     <div className={style(classes.title, CommonClasses.button)}>
                         <a href={productUrl} className={CommonClasses.resetDefaultStyle}>
                             {productTitle}
                         </a>
-                    </div>
-                    <div className={style(classes.modelName)}>{modelName}</div>
-                </div>
-                <div className={style(FlexLayout.column.alignToEnd)}>
-                    <div className={style(classes.priceLabel)}>{price}</div>
-                    {normalizedRating !== undefined ? (
-                        <div className={style(classes.rating)}>
-                            <StarsRating
-                                className={style(classes.starsRating)}
-                                rating={normalizedRating}
-                            />
-                            {reviewsCount !== undefined ? (
-                                <div className={style(classes.reviewsCount, {})}>
-                                    ({reviewsCount} reviews)
-                                </div>
-                            ) : null}
-                        </div>
-                    ) : null}
-                </div>
-            </div>
+                    </div></div></div>
             <div
                 className={style(classes.sectionModelNameAndRating, FlexLayout.row.alignToStart)}
             ></div>

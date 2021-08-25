@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { createSimulation } from '@wixc3/wcs-core';
 import { AppProductItem } from '../../../src/components/app-product-item/app-product-item';
 import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
@@ -14,20 +13,13 @@ export default createSimulation({
         price: '$9.00',
         reviewsAverageRating: 4,
         reviewsCount: 22,
+        isAddedToCart: false,
+        isNew: true
     },
     setup: [...CommonSimulationsSetup],
-    wrapper: ({ renderSimulation }) => {
-        const [isAddedToCard, setIsAddedToCard] = useState(false);
-        return renderSimulation({
-            isAddedToCart: isAddedToCard,
-            onAddToCartButtonClick: () => {
-                setIsAddedToCard((isAddedToCard) => !isAddedToCard);
-            },
-        });
-    },
     environmentProps: {
         windowHeight: 726,
-        canvasWidth: 598,
+        canvasWidth: 360,
     },
-    name: 'long Title simulation',
+    name: 'New Product',
 });
