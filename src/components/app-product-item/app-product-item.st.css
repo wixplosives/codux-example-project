@@ -180,10 +180,3 @@
         height: 310px;
     }
 }
-
-.footerContainer {
-
-    display: flex;
-
-    justify-content: center;
-}
