@@ -13,9 +13,9 @@ export default createSimulation({
     },
     setup: [...CommonSimulationsSetup],
     environmentProps: {
-        windowHeight: 812,
+        windowHeight: 687,
         canvasWidth: 388,
-        windowWidth: 367,
+        windowWidth: 531,
         canvasHeight: 455
     },
     name: 'Product Card',
