@@ -4,6 +4,8 @@ import { StarsRating } from '../stars-rating/stars-rating';
 import { FlexLayout } from '../../common-classes/flex-layout/flex-layout';
 import { ImageView } from '../image-view/image-view';
 import { CommonClasses } from '../../common-classes/common-classes/common-classes';
+import { classes as classes0 } from '../../common-classes/common-classes/common-classes.st.css';
+import { Logo } from '../logo/logo';
 
 export interface AppProductItemProps {
     /** Where the image is located */
@@ -59,6 +61,10 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
             {...htmlAttributes}
             className={style(classes.root, FlexLayout.column.default, className)}
         >
+            <div>
+                <StarsRating rating={2} />
+                <Logo />
+            </div>
             <div className={style(classes.sectionMain, CommonClasses.positioned)}>
                 <a href={productUrl} className={CommonClasses.resetDefaultStyle}>
                     <ImageView
@@ -87,7 +93,14 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                     <div className={style(classes.bannerNew, FlexLayout.centerContent)}>New</div>
                 ) : null}
             </div>
-            <div>
+            <div className={classes.footerContainer}>
+                <div className={`${FlexLayout.fillRemainingHorizontalSpace}`}>
+                    <div className={style(classes.title, CommonClasses.button)}>
+                        <a href={productUrl} className={`${CommonClasses.resetDefaultStyle}`}>
+                            {productTitle}
+                        </a>
+                    </div>
+                    <div className={classes.modelName}>{modelName}</div></div>
                 <div className={`${FlexLayout.column.alignToEnd}`}>
                     <div className={classes.priceLabel}>{price}</div>
                     {normalizedRating !== undefined ? <div className={classes.rating}>
@@ -96,14 +109,7 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                             ({reviewsCount} reviews)
                         </div> : null}
                     </div> : null}
-                </div>
-                <div className={FlexLayout.fillRemainingHorizontalSpace}>
-                    <div className={classes.modelName}>{modelName}</div>
-                    <div className={style(classes.title, CommonClasses.button)}>
-                        <a href={productUrl} className={CommonClasses.resetDefaultStyle}>
-                            {productTitle}
-                        </a>
-                    </div></div></div>
+                </div></div>
             <div
                 className={style(classes.sectionModelNameAndRating, FlexLayout.row.alignToStart)}
             ></div>

@@ -46,7 +46,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     transition: all 0.2s;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .addToCartButton:not(isAddedToCart) {
@@ -56,7 +56,7 @@
 
 .addToCartButton:isAddedToCart {
     color: #fff;
-    background: navy;
+    background: black;
 }
 
 .addToCartButton:not(isAddedToCart):hover {
@@ -179,4 +179,11 @@
     .productImage {
         height: 310px;
     }
+}
+
+.footerContainer {
+
+    display: flex;
+
+    align-items: center;
 }
