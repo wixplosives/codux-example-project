@@ -13,8 +13,7 @@
     white-space: nowrap;
 }
 
-.hitArea
-{
+.hitArea {
     position: relative;
 }
 
@@ -28,24 +27,23 @@
     transform: translate(-50%, -50%)
 }
 
-.noUserSelect
-{
+.noUserSelect {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
 
-.button
-{
+.button {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.button:not([disabled]):not([aria-disabled])
-{
+.button:not([disabled]):not([aria-disabled]) {
     cursor: pointer;
 }
 
