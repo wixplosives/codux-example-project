@@ -52,6 +52,7 @@
     transition: all 0.2s;
     min-width: 100%;
     background: none;
+    padding: 0px;
 }
 
 .addToCartButton:not(isAddedToCart) {
@@ -191,16 +192,16 @@
 }
 
 .productTitle {
-    font-size: 20px;
     font-family: 'TradeGothicLTStdBold', sans-serif;
     font-weight: 700;
     color: #000;
     height: 20px;
     padding-bottom: 0px;
     margin-top: 0px;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-left: 5px;
     height: 20px;
+    font-size: 20px;
 
 }
 
@@ -242,4 +243,7 @@
 .productLink {
     text-decoration: none;
     transition: all 0.1s;
+    padding: 0px;
 }
+
+..botton {}
