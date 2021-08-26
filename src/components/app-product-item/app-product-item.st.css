@@ -217,7 +217,7 @@
 }
 
 .origPrice {
-    opacity: 0.5;
+    color: #797979;
     text-decoration: line-through;
 }
 
