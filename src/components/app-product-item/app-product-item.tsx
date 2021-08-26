@@ -40,8 +40,7 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
 
                 <div className={style(classes0.flexColumnAlignToStart)}>
                     <a href="/" className={classes.productLink}>
-                        <h1 className={classes.productTitle}>{productTitle}</h1></a>
-                </div>
+                        <h1 className={classes.productTitle}>{productTitle}</h1></a></div>
                 <div className={classes0.flexColumnAlignToEnd}>
                     <div className={classes0.flexRowAlignToStart}>
                         <h1 className={style(classes.productPrice, classes.origPrice)}>{originalPrice}</h1>
