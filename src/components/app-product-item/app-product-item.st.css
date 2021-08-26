@@ -193,6 +193,7 @@
 
 .productTitle {
     font-family: 'Prompt', sans-serif;
+    font-size: 24px;
     font-weight: 500;
     color: #000;
     padding-bottom: 0px;
@@ -200,31 +201,28 @@
     padding-top: 0px;
     padding-left: 5px;
     height: 36px;
-    font-size: 20px;
+    
 
 }
 
 .productPrice {
     padding: 0px 5px 0px 5px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'TradeGothicLTStd', sans-serif;
-    color: #b20000;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Prompt', sans-serif;
+    
     line-height: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.productOrigPrice {
-    padding: 0px 5px 0px 5px;
-    font-size: 20px;
-    font-weight: 400;
+.origPrice {
     opacity: 0.5;
-    font-family: 'TradeGothicLTStd', sans-serif;
-    line-height: 20px;
     text-decoration: line-through;
-    margin-top: 0px;
-    margin-bottom: 0px;
+}
+
+.newPrice{
+color: #F35A59;
 }
 
 .footer {
