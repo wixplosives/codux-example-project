@@ -5,8 +5,8 @@ import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 export default createSimulation({
     componentType: AppProductItem,
     props: {
-        currentPrice: '$59.99',
-        originalPrice: '$84.95',
+        currentPrice: '$59',
+        originalPrice: '$84',
         productTitle: 'Product Name',
         isAddedToCart: false
 

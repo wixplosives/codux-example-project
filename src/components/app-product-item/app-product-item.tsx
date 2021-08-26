@@ -23,7 +23,7 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
        productTitle,
        isAddedToCart = false,
        originalPrice,
-	currentPrice,
+	   currentPrice,
        ...htmlAttributes
    } = props;
 
@@ -44,8 +44,8 @@ export const AppProductItem = React.memo<AppProductItemProps>((props) => {
                 </div>
                 <div className={classes0.flexColumnAlignToEnd}>
                     <div className={classes0.flexRowAlignToStart}>
-                        <h1 className={style(classes.productPrice, classes.origPrice)}>$84.95</h1>
-                        <h1 className={style(classes.productPrice, classes.newPrice)}>$59.99</h1>
+                        <h1 className={style(classes.productPrice, classes.origPrice)}>{originalPrice}</h1>
+                        <h1 className={style(classes.productPrice, classes.newPrice)}>{currentPrice}</h1>
                     </div>
                     <StarsRating rating={3} className={classes.starsRating} /></div></div>
         </div>
