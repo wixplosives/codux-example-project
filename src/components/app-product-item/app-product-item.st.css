@@ -46,8 +46,8 @@
     -st-states: isAddedToCart;
     text-transform: uppercase;
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: 2px;
     transition: all 0.2s;
     min-width: 100%;
@@ -192,8 +192,8 @@
 }
 
 .productTitle {
-    font-family: 'TradeGothicLTStdBold', sans-serif;
-    font-weight: 700;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
     color: #000;
     height: 20px;
     padding-bottom: 0px;
