@@ -5,6 +5,8 @@
 
 .root {
     font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .productImage {
@@ -199,8 +201,18 @@
     padding-top: 0px;
     padding-left: 5px;
     height: 36px;
-    
+}
 
+.productDesc {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 5px;
+    height: 24px;
 }
 
 .productPrice {
@@ -218,8 +230,8 @@
     text-decoration: line-through;
 }
 
-.newPrice{
-color: #F35A59;
+.newPrice {
+    color: #F35A59;
 }
 
 .footer {

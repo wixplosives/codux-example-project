@@ -7,7 +7,7 @@ export default createSimulation({
     props: {
         currentPrice: '$59',
         originalPrice: '$84',
-        productTitle: 'Product Name',
+        productTitle: 'Unisex Scarf',
         isAddedToCart: false
 
     },
