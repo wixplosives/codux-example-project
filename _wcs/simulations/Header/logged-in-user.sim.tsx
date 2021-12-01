@@ -1,5 +1,5 @@
 import React from 'react';
-import { createSimulation } from '@wixc3/wcs-core';
+import { createSimulation } from '@wixc3/react-simulation';
 import { Header } from '../../../src/components/header/header';
 import { LoggedInUserContext } from '../../../src/stores/user-store';
 import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';

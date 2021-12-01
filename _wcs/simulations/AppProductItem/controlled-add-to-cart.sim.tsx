@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { createSimulation } from '@wixc3/wcs-core';
+import { createSimulation } from '@wixc3/react-simulation';
 import { AppProductItem } from '../../../src/components/app-product-item/app-product-item';
 import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 

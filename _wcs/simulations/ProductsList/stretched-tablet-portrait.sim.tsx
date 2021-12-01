@@ -1,4 +1,4 @@
-import { createSimulation } from '@wixc3/wcs-core';
+import { createSimulation } from '@wixc3/react-simulation';
 import { ProductsList } from '../../../src/components/products-list/products-list';
 import { Products } from '../../mocks/products';
 

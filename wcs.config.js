@@ -1,7 +1,4 @@
 module.exports = {
-    previewTypeConfiguration: {
-        previewType: 'compiled',
-    },
     scripts: {
         install: {
             title: 'Install',

@@ -1,4 +1,4 @@
-import { createSimulation } from '@wixc3/wcs-core';
+import { createSimulation } from '@wixc3/react-simulation';
 import { Menu } from '../../../src/components/menu/menu';
 import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 

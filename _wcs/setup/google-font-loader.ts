@@ -1,4 +1,4 @@
-import type { SimulationSetupFunction } from '@wixc3/wcs-core';
+import type { SimulationSetupFunction } from '@wixc3/simulation-core';
 
 export type IFontWeight = '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
 

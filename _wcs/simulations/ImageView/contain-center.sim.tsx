@@ -1,5 +1,5 @@
 import React from 'react';
-import { createSimulation } from '@wixc3/wcs-core';
+import { createSimulation } from '@wixc3/react-simulation';
 import { ImageView } from '../../../src/components/image-view/image-view';
 import { CanvasStretchingView } from '../../layouts/canvas-stretching-view/canvas-stretching-view';
 

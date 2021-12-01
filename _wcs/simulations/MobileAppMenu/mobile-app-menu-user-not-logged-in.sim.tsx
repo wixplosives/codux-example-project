@@ -1,4 +1,4 @@
-import { createSimulation } from '@wixc3/wcs-core';
+import { createSimulation } from '@wixc3/react-simulation';
 import { MobileAppMenu } from '../../../src/components/mobile-app-menu/mobile-app-menu';
 import { CommonSimulationsSetup } from '../../setup/common-simulations-setup';
 import { SiteMap } from '../../../src/stores/site-map';
