@@ -6,6 +6,7 @@ import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 import { SiteMap } from "../../../src/stores/site-map";
 
 export default createDemo({
+  name: "Desktop - Logged In User",
   demo: () => (
     <LoggedInUserContext.Provider
       value={{
@@ -33,5 +34,4 @@ export default createDemo({
     },
   },
   setup: [...CommonSimulationsSetup],
-  name: "Desktop - Logged In User",
 });
