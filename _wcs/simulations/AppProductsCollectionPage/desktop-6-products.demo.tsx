@@ -1,9 +1,7 @@
 import React from "react";
 import { createDemo } from "@wixc3/react-simulation";
 import { AppProductsCollectionPage } from "../../../src/components/app-products-collection-page/app-products-collection-page";
-// import { Products } from '../../mocks/products';
 import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
-// import { SiteMap } from '../../../src/stores/site-map';
 
 export default createDemo({
   name: "Desktop - 6 Products",
