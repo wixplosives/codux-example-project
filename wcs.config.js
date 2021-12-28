@@ -4,6 +4,7 @@ module.exports = {
             title: 'Install',
             description: 'Run install',
             command: 'npm i',
+            trigger: ['checkout', 'pull', 'setup'],
         }
     },
 }
