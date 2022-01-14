@@ -7,4 +7,7 @@ module.exports = {
       trigger: ["checkout", "pull", "setup"],
     },
   },
+  newComponent: {
+    componentsPath: 'src/components',
+  },
 };
