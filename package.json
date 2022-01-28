@@ -10,15 +10,15 @@
     "test": "yarn typecheck"
   },
   "dependencies": {
-    "@stylable/runtime": "^4.8.3",
+    "@stylable/runtime": "^4.10.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@stylable/core": "^4.8.3",
-    "@types/react": "^17.0.37",
+    "@stylable/core": "^4.10.3",
+    "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@wixc3/react-simulation": "^4.0.0",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.5"
   }
 }
