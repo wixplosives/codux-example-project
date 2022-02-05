@@ -9,5 +9,6 @@ module.exports = {
   },
   newComponent: {
     componentsPath: 'src/components',
+    templatesPath:  'src/_wcs/component-templates',
   },
 };
