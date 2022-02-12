@@ -1,12 +1,12 @@
 import React from "react";
-import { createBoard } from '@wixc3/react-board';
+import { createBoard } from "@wixc3/react-board";
 import { Header } from "../../../src/components/header/header";
 import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "Desktop - Not Logged In User",
-  board: function HeaderBoard() {
+  Board: function HeaderBoard() {
     return (
       <Header
         menuItems={[

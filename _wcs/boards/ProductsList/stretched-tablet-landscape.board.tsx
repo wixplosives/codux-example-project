@@ -1,11 +1,11 @@
 import React from "react";
-import { createBoard } from '@wixc3/react-board';
+import { createBoard } from "@wixc3/react-board";
 import { ProductsList } from "../../../src/components/products-list/products-list";
 import { Products } from "../../mocks/products";
 
 export default createBoard({
   name: "Stretched - Tablet Landscape",
-  board: function ProductsListBoard() {
+  Board: function ProductsListBoard() {
     return (
       <ProductsList
         products={[

@@ -1,12 +1,12 @@
 import React from "react";
-import { createBoard } from '@wixc3/react-board';
+import { createBoard } from "@wixc3/react-board";
 import { MobileAppMenu } from "../../../src/components/mobile-app-menu/mobile-app-menu";
 import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "User Not Logged In",
-  board: function MobileAppMenuBoard() {
+  Board: function MobileAppMenuBoard() {
     return (
       <MobileAppMenu
         menuItems={[

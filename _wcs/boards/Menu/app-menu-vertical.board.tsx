@@ -1,10 +1,10 @@
 import React from "react";
-import { createBoard } from '@wixc3/react-board';
+import { createBoard } from "@wixc3/react-board";
 import { Menu } from "../../../src/components/menu/menu";
 import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
-  board: function MenuBoard() {
+  Board: function MenuBoard() {
     return (
       <Menu
         layout="vertical"
