@@ -5,7 +5,7 @@ import { FontAwesomeLoader } from "../../setup/font-awesome-loader";
 
 export default createBoard({
   name: "Not Empty Cart",
-  demo: function ShoppingCartDemo() {
+  board: function ShoppingCartBoard() {
     return <ShoppingCart itemsCount={3} />;
   },
   setup: [FontAwesomeLoader],

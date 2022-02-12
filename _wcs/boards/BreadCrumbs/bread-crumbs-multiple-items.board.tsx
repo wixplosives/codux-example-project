@@ -6,7 +6,7 @@ import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "Multiple Items",
-  demo: function BreadCrumbsDemo() {
+  board: function BreadCrumbsBoard() {
     return (
       <BreadCrumbs
         items={[

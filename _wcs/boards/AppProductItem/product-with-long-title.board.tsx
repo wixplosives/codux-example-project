@@ -5,7 +5,7 @@ import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
   name: "Product With Long Title",
-  demo: function AppProductItemDemo() {
+  board: function AppProductItemBoard() {
     return (
       <AppProductItem
         productId="grw2as"

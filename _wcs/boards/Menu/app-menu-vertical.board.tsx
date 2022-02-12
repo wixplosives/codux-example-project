@@ -4,7 +4,7 @@ import { Menu } from "../../../src/components/menu/menu";
 import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
-  demo: function MenuDemo() {
+  board: function MenuBoard() {
     return (
       <Menu
         layout="vertical"

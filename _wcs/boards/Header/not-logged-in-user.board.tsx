@@ -6,7 +6,7 @@ import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "Desktop - Not Logged In User",
-  demo: function HeaderDemo() {
+  board: function HeaderBoard() {
     return (
       <Header
         menuItems={[

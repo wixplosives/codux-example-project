@@ -5,7 +5,7 @@ import React from "react";
 
 export default createBoard({
   name: "Empty Cart",
-  demo: function ShoppingCartDemo() {
+  board: function ShoppingCartBoard() {
     return <ShoppingCart itemsCount={0} />;
   },
   setup: [FontAwesomeLoader],

@@ -5,7 +5,7 @@ import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
   name: "Horizontal Menu",
-  demo: function MenuDemo() {
+  board: function MenuBoard() {
     return (
       <Menu
         layout="horizontal"

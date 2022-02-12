@@ -7,7 +7,7 @@ import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "References",
-  demo: function AppProductsCollectionPageDemo() {
+  board: function AppProductsCollectionPageBoard() {
     return (
       <AppProductsCollectionPage
         products={[

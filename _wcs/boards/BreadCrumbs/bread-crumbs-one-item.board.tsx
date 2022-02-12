@@ -6,7 +6,7 @@ import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "One Item",
-  demo: function BreadCrumbsDemo() {
+  board: function BreadCrumbsBoard() {
     return <BreadCrumbs items={[SiteMap.HomePage]} />;
   },
   environmentProps: {},

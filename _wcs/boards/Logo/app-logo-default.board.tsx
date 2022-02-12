@@ -5,7 +5,7 @@ import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
   name: "Default",
-  demo: function LogoDemo() {
+  board: function LogoBoard() {
     return <Logo />;
   },
   environmentProps: {},

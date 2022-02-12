@@ -5,7 +5,7 @@ import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
   name: "Mobile - 6 Products",
-  demo: function AppProductsCollectionPageDemo() {
+  board: function AppProductsCollectionPageBoard() {
     return (
       <AppProductsCollectionPage
         products={[

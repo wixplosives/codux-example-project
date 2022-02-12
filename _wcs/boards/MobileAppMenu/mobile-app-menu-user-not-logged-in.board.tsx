@@ -6,7 +6,7 @@ import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
   name: "User Not Logged In",
-  demo: function MobileAppMenuDemo() {
+  board: function MobileAppMenuBoard() {
     return (
       <MobileAppMenu
         menuItems={[

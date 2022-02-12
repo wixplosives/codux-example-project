@@ -5,7 +5,7 @@ import { Products } from "../../mocks/products";
 
 export default createBoard({
   name: "Stretched - Tablet Portrait",
-  demo: function ProductsListDemo() {
+  board: function ProductsListBoard() {
     return (
       <ProductsList
         products={[

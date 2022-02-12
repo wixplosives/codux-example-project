@@ -5,7 +5,7 @@ import { FontAwesomeLoader } from "../../setup/font-awesome-loader";
 
 export default createBoard({
   name: "Rating 0",
-  demo: function StarsRatingDemo() {
+  board: function StarsRatingBoard() {
     return <StarsRating rating={0} />;
   },
   setup: [FontAwesomeLoader],

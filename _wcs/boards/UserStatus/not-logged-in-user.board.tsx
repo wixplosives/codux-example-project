@@ -5,7 +5,7 @@ import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
 
 export default createBoard({
   name: "Not Logged In User",
-  demo: function UserStatusDemo() {
+  board: function UserStatusBoard() {
     return <UserStatus />;
   },
   environmentProps: {},
