@@ -1,7 +1,7 @@
 import React from "react";
 import { createBoard } from '@wixc3/react-board';
 import { MobileAppMenu } from "../../../src/components/mobile-app-menu/mobile-app-menu";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 import { LoggedInUserContext } from "../../../src/stores/user-store";
 import { SiteMap } from "../../../src/stores/site-map";
 
@@ -24,7 +24,7 @@ export default createBoard({
       />
     </LoggedInUserContext.Provider>
   ),
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
   environmentProps: {
     windowWidth: 360,
     windowHeight: 640,

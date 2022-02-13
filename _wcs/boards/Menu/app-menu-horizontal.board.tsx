@@ -1,7 +1,7 @@
 import React from "react";
 import { createBoard } from "@wixc3/react-board";
 import { Menu } from "../../../src/components/menu/menu";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 
 export default createBoard({
   name: "Horizontal Menu",
@@ -27,5 +27,5 @@ export default createBoard({
     );
   },
   environmentProps: {},
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
 });

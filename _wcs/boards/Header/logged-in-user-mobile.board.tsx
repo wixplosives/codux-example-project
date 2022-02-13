@@ -2,7 +2,7 @@ import React from "react";
 import { createBoard } from '@wixc3/react-board';
 import { Header } from "../../../src/components/header/header";
 import { LoggedInUserContext } from "../../../src/stores/user-store";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 import { SiteMap } from "../../../src/stores/site-map";
 
 export default createBoard({
@@ -35,5 +35,5 @@ export default createBoard({
     windowHeight: 640,
     windowWidth: 360,
   },
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
 });

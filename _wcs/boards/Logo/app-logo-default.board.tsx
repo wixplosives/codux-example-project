@@ -1,7 +1,7 @@
 import React from "react";
 import { createBoard } from "@wixc3/react-board";
 import { Logo } from "../../../src/components/logo/logo";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 
 export default createBoard({
   name: "Default",
@@ -9,5 +9,5 @@ export default createBoard({
     return <Logo />;
   },
   environmentProps: {},
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
 });

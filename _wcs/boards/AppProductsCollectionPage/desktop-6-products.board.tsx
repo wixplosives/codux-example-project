@@ -1,7 +1,7 @@
 import React from "react";
 import { createBoard } from "@wixc3/react-board";
 import { AppProductsCollectionPage } from "../../../src/components/app-products-collection-page/app-products-collection-page";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 
 export default createBoard({
   name: "Desktop - 6 Products",
@@ -96,7 +96,7 @@ export default createBoard({
       />
     );
   },
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
   environmentProps: {
     canvasMargin: {
       top: 0,

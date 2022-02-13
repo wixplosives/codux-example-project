@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createBoard } from '@wixc3/react-board';
 import { AppProductItem } from "../../../src/components/app-product-item/app-product-item";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 import React from "react";
 
 export default createBoard({
@@ -25,7 +25,7 @@ export default createBoard({
       />
     );
   },
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
   environmentProps: {
     windowHeight: 726,
     canvasWidth: 360,

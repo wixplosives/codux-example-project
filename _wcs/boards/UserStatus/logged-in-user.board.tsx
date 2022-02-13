@@ -1,7 +1,7 @@
 import React from "react";
 import { createBoard } from "@wixc3/react-board";
 import { UserStatus } from "../../../src/components/user-status/user-status";
-import { CommonSimulationsSetup } from "../../setup/common-simulations-setup";
+import { CommonBoardsSetup } from "../../setup/common-board-setup";
 
 export default createBoard({
   name: "Logged In User",
@@ -16,5 +16,5 @@ export default createBoard({
     );
   },
   environmentProps: {},
-  setup: [...CommonSimulationsSetup],
+  setup: [...CommonBoardsSetup],
 });
