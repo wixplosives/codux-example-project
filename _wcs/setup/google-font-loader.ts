@@ -1,4 +1,4 @@
-import type { SimulationSetupFunction } from '@wixc3/simulation-core';
+import type { BoardSetupFunction } from '@wixc3/board-core';
 
 export type IFontWeight = '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
 
@@ -14,7 +14,7 @@ const defaultStyleVariations: IFontStyleVariation[] = [{ fontWeight: '400', isIt
 export const createGoogleFontLoader = (
     fontFamily: string,
     styleVariations: IFontStyleVariation[] = defaultStyleVariations
-): SimulationSetupFunction => {
+): BoardSetupFunction => {
     const variationsStr = styleVariations
         .map((variation) => {
             if (typeof variation === 'string') {
